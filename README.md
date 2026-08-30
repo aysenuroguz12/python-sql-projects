@@ -1,39 +1,189 @@
-# Python SQL Projects
+# 🐍 Python SQL Projects
 
-Bu depo çeşitli Python ile SQL (SQLite, PostgreSQL vb.) projelerini içerir. Eğitim amaçlı küçük uygulamalar, sorgu örnekleri ve veritabanı işlemleri üzerine örnekler bulacaksınız.
+Python ve SQL kullanarak gerçekçi veri yönetimi uygulamalarını barındıran bir koleksiyon. SQLite ve PostgreSQL ile veritabanı tasarımı, CRUD operasyonları ve veri analizi örnekleri içerir.
 
-## İçindekiler
-- projeler/ : Her proje için ayrı bir klasör
-- data/ : Örnek veri setleri
-- notebooks/ : Jupyter Notebook formatındaki örnekler
-- requirements.txt : Projelerin bağımlılıkları (varsa)
+---
 
-## Başlarken
-1. Depoyu klonlayın:
+## 📋 İçerik Yapısı
 
-   git clone https://github.com/aysenuroguz12/python-sql-projects.git
+```
+python-sql-projects/
+├── finans-takip/              # Finansal işlem yönetim sistemi
+├── kütüphane-takip/           # Kütüphane yönetim ve ödünç takip
+├── ürün-stok-takibi/          # Ürün envanter yönetim sistemi
+├── database.db                # SQLite veritabanı
+├── requirements.txt           # Python bağımlılıkları
+└── README.md                  # Bu dosya
+```
 
-2. Sanal ortam oluşturun ve etkinleştirin (opsiyonel ama önerilir):
+---
 
-   python -m venv venv
-   source venv/bin/activate  # macOS/Linux
-   venv\Scripts\activate     # Windows
+## 🚀 Projeler
 
-3. Bağımlılıkları yükleyin (varsa):
+### 1️⃣ Finans Takip (`finans-takip/`)
+Kişisel veya işletme finansmanı yönetimi için uygulamadır.
 
-   pip install -r requirements.txt
+**Özellikler:**
+- ✅ Gelir ve gider kaydı
+- ✅ Kategori bazlı filtreleme
+- ✅ Aylık/yıllık rapor
+- ✅ Bütçe takibi
 
-4. İlgili proje klasörüne girip README içindeki yönergeleri takip edin.
+**Teknoloji:** Python, SQLite
 
-## Örnek Projeler
-- sqlite_example/ : SQLite ile temel CRUD işlemleri
-- postgresql_example/ : PostgreSQL bağlantı ve sorgu örnekleri
-- etl_example/ : Basit ETL akışı ve veri yükleme
+---
 
-(Not: Bu projeler örnek isimlerdir. Gerçek proje klasör adları depoda bulunabilir.)
+### 2️⃣ Kütüphane Takip (`kütüphane-takip/`)
+Kütüphane kaynakları ve üye yönetim sistemi.
 
-## Katkıda Bulunma
-Katkılar hoş karşılanır. Yeni proje eklemek, hataları düzeltmek veya README iyileştirmeleri için PR açabilirsiniz.
+**Özellikler:**
+- ✅ Kitap katalog ve envanteri
+- ✅ Üye kayıt ve yönetim
+- ✅ Ödünç ve iade işlemleri
+- ✅ Gecikme cezası hesaplama
 
-## Lisans
-Bu depo için lisans belirtilmemişse, lütfen sahibiyle iletişime geçin veya bir lisans ekleyin.
+**Teknoloji:** Python, SQLite
+
+---
+
+### 3️⃣ Ürün Stok Takibi (`ürün-stok-takibi/`)
+Perakende veya e-ticaret işletmesi için envanter yönetim sistemi.
+
+**Özellikler:**
+- ✅ Ürün ekle/güncelle/sil (CRUD)
+- ✅ Stok seviyesi izleme
+- ✅ Düşük stok uyarıları
+- ✅ Satış raporu analizi
+
+**Teknoloji:** Python, SQLite
+
+---
+
+## 📦 Kurulum
+
+### Sistem Gereksinimleri
+- Python 3.8+
+- pip paket yöneticisi
+
+### Adım Adım Kurulum
+
+1. **Depoyu klonlayın:**
+```bash
+git clone https://github.com/aysenuroguz12/python-sql-projects.git
+cd python-sql-projects
+```
+
+2. **Sanal ortam oluşturun (önerilir):**
+```bash
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+
+# Windows
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. **Bağımlılıkları yükleyin:**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Proje klasörüne girin ve çalıştırın:**
+```bash
+cd finans-takip
+python main.py
+```
+
+---
+
+## 💻 Kullanım
+
+Her proje klasörü kendi `README.md` ve örnek dosyaları içerir. Başlamak için:
+
+```bash
+# Proje klasörüne girin
+cd [proje-adı]
+
+# İlgili Python dosyasını çalıştırın
+python main.py
+```
+
+### Örnek Veritabanı Sorgusu
+```python
+import sqlite3
+
+conn = sqlite3.connect('database.db')
+cursor = conn.cursor()
+
+# Veri sorgulama
+cursor.execute("SELECT * FROM users")
+results = cursor.fetchall()
+
+for row in results:
+    print(row)
+
+conn.close()
+```
+
+---
+
+## 🛠️ Teknoloji Stack
+
+| Bileşen | Teknoloji |
+|---------|-----------|
+| **Dil** | Python 3.8+ |
+| **Veritabanı** | SQLite 3 |
+| **Kütüphaneler** | sqlite3, pandas, sqlalchemy |
+
+---
+
+## 📚 Öğrenme Kaynakları
+
+- [SQLite Resmi Dokümantasyonu](https://www.sqlite.org/docs.html)
+- [Python sqlite3 Modülü](https://docs.python.org/3/library/sqlite3.html)
+- [SQL Temel Kavramlar](https://www.w3schools.com/sql/)
+
+---
+
+## 🤝 Katkıda Bulunma
+
+Katkılar hoş karşılanır! Lütfen aşağıdakileri yapın:
+
+1. Depoyu fork edin
+2. Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`)
+4. Branch'i push edin (`git push origin feature/yeni-ozellik`)
+5. Pull Request açın
+
+### Katkı Yönergeleri
+- Kod stil olarak PEP 8'e uyun
+- Yeni özellikler için test yazın
+- README dosyasını güncelleyin
+
+---
+
+## 📄 Lisans
+
+Bu proje şu anda lisans altında değildir. Kullanım için repo sahibiyle iletişime geçin.
+
+---
+
+## 👤 İletişim
+
+**Geliştirici:** [@aysenuroguz12](https://github.com/aysenuroguz12)  
+**E-posta:** Sorularınız için GitHub Issues kullanın
+
+---
+
+## 📝 Notlar
+
+- Veritabanı dosyası (`database.db`) depoyla birlikte getirilir
+- Her proje bağımsız olarak kullanılabilir
+- Örnek veriler öğrenme amaçlıdır
+
+**Son Güncelleme:** Ağustos 2026
+
+---
+
+⭐ Bu projeyi beğendiyseniz, lütfen yıldız vermeyi unutmayın!
