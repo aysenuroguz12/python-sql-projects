@@ -1,10 +1,10 @@
-# 🐍 Python SQL Projects
+# Python SQL Projects
 
 Python ve SQL kullanarak gerçekçi veri yönetimi uygulamalarını barındıran bir koleksiyon. SQLite ve PostgreSQL ile veritabanı tasarımı, CRUD operasyonları ve veri analizi örnekleri içerir.
 
 ---
 
-## 📋 İçerik Yapısı
+## İçerik Yapısı
 
 ```
 python-sql-projects/
@@ -18,7 +18,7 @@ python-sql-projects/
 
 ---
 
-## 🚀 Projeler
+##  Projeler
 
 ### 1️⃣ Finans Takip (`finans-takip/`)
 Kişisel veya işletme finansmanı yönetimi için uygulamadır.
@@ -59,7 +59,7 @@ Perakende veya e-ticaret işletmesi için envanter yönetim sistemi.
 
 ---
 
-## 📦 Kurulum
+##  Kurulum
 
 ### Sistem Gereksinimleri
 - Python 3.8+
@@ -97,7 +97,7 @@ python main.py
 
 ---
 
-## 💻 Kullanım
+##  Kullanım
 
 Her proje klasörü kendi `README.md` ve örnek dosyaları içerir. Başlamak için:
 
@@ -128,7 +128,7 @@ conn.close()
 
 ---
 
-## 🛠️ Teknoloji Stack
+## Teknoloji Stack
 
 | Bileşen | Teknoloji |
 |---------|-----------|
@@ -138,7 +138,7 @@ conn.close()
 
 ---
 
-## 📚 Öğrenme Kaynakları
+##  Öğrenme Kaynakları
 
 - [SQLite Resmi Dokümantasyonu](https://www.sqlite.org/docs.html)
 - [Python sqlite3 Modülü](https://docs.python.org/3/library/sqlite3.html)
@@ -146,7 +146,7 @@ conn.close()
 
 ---
 
-## 🤝 Katkıda Bulunma
+##  Katkıda Bulunma
 
 Katkılar hoş karşılanır! Lütfen aşağıdakileri yapın:
 
@@ -163,20 +163,19 @@ Katkılar hoş karşılanır! Lütfen aşağıdakileri yapın:
 
 ---
 
-## 📄 Lisans
+##  Lisans
 
 Bu proje şu anda lisans altında değildir. Kullanım için repo sahibiyle iletişime geçin.
 
 ---
 
-## 👤 İletişim
+##  İletişim
 
 **Geliştirici:** [@aysenuroguz12](https://github.com/aysenuroguz12)  
-**E-posta:** Sorularınız için GitHub Issues kullanın
 
 ---
 
-## 📝 Notlar
+##  Notlar
 
 - Veritabanı dosyası (`database.db`) depoyla birlikte getirilir
 - Her proje bağımsız olarak kullanılabilir
